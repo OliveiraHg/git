@@ -552,7 +552,7 @@ function isAuthenticated(req, res, next) {
 }
 
 // Rota para a página de dashboard (requer autenticação)
-app.get('/dash', isAuthenticated, (req, res) => {
+app.get('/', (req, res) => {
     res.sendFile(path.join(__dirname, './public/docs.html'));
 });
 
