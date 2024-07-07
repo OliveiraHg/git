@@ -143,8 +143,6 @@ fs.writeFileSync("./lib/secret/usuarios.json", JSON.stringify(users, null, 2));
 
 var upload = multer()
 var app = express()
- const cookieParser = require('./cookie-parser');
-app.use(cookieParser());
 
 
 // Função de autenticação
